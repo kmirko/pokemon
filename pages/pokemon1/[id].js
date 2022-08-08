@@ -1,12 +1,8 @@
-
 import Link from 'next/link'
 
-export default function Details({pokemon}){
-
-   
+export default function Details({pokemon}){  
     return(
         <div>
-
             <div className='p-20'>{pokemon.name}</div>
             <Link href={`/`}>HOME PAGE</Link>
         </div>

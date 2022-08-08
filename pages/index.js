@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import Layout from '../components/Layout'
-import Link from 'next/link'
 import Item from '../components/Item'
 
 export default function Home() {
@@ -18,13 +17,6 @@ useEffect(()=>{
 
   return (
     <Layout >
-    <h1 className='bg-blue-500'>Pockemon</h1>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <Link href='/about'>ABOUT PAGE</Link>
-    <Link href='/coment'>COMENT PAGE</Link>
-    {JSON.stringify(pokemon)}
     {pokemon.map(pokem=>(
       <Item key={pokem.id} pokem={pokem}/>
     ))}
