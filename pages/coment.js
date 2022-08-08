@@ -1,11 +1,12 @@
 import Layout from "../components/Layout";
+import Item2 from '../components/Item2'
 
 export default function Coment({pokemon}){
 
     return (
         <Layout >
         {pokemon.map(pok=>(
-          <h3 key={pok.id}>{pok.name}</h3>
+          <Item2 key={pok.id} pokem={pok}/>
         ))}
         </Layout>
       )
