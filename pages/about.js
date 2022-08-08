@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import {useRouter} from 'next/router'
+import Item1 from "../components/Item1";
 
 export default function About({pokemon}){
 
@@ -15,7 +16,7 @@ export default function About({pokemon}){
         <Link href='/'><a>HOME PAGE</a></Link>
 
         {pokemon.map(pok=>(
-          <h3 key={pok.id}>{pok.name}</h3>
+          <Item1 key={pok.id} pokem={pok}/>
         ))}
         </Layout>
       )
